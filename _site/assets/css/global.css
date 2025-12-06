@@ -24,7 +24,24 @@ a:hover {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1480px;
+}
+
+/* Card styling improvements */
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-white.shadow-sm {
+    transition: box-shadow 0.3s ease;
+}
+
+.bg-white.shadow-sm:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -60,7 +77,50 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    opacity: 0.95;
+    opacity: 0.98;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #212529 !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-brand:hover {
+    color: #007bff !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #495057 !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+    background-color: #f8f9fa;
+    text-decoration: none !important;
+}
+
+.nav-item.active .nav-link {
+    color: #007bff !important;
+    background-color: #e7f3ff;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none !important;
+    padding: 0.4rem 0.6rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .inline-badge {
@@ -422,5 +482,19 @@ img.lazy {
     background-color: #f8f9fa;
     border-left-color: #007bff;
     padding-left: 0.75rem;
+}
+
+/* R&D Interests tag hover effect */
+.text-profile-bio a[href^="/ai-for"],
+.text-profile-bio a[href^="/llm"] {
+    transition: all 0.2s ease;
+}
+
+.text-profile-bio a[href^="/ai-for"]:hover,
+.text-profile-bio a[href^="/llm"]:hover {
+    background-color: #cfe2ff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
