@@ -302,23 +302,31 @@ img.lazy {
     font-size: 0.9rem;
 }
 
-/* Individual Social Link Colors */
+/* Individual Social Link Colors with Underline */
+.email-link {
+    border-bottom: 2px solid #007bff;
+}
+
 .email-link:hover {
-    border-bottom-color: #007bff;
-    color: #007bff;
+    border-bottom-color: #0056b3;
+    color: #0056b3;
 }
 
 .email-link:hover i {
-    color: #007bff;
+    color: #0056b3;
+}
+
+.gscholar-link {
+    border-bottom: 2px solid #007bff;
 }
 
 .gscholar-link:hover {
-    border-bottom-color: #4285f4;
-    color: #4285f4;
+    border-bottom-color: #0056b3;
+    color: #0056b3;
 }
 
 .gscholar-link:hover i {
-    color: #4285f4;
+    color: #0056b3;
 }
 
 .sscholar-link:hover {
@@ -330,13 +338,17 @@ img.lazy {
     color: #17a2b8;
 }
 
+.github-link {
+    border-bottom: 2px solid #007bff;
+}
+
 .github-link:hover {
-    border-bottom-color: #333;
-    color: #333;
+    border-bottom-color: #0056b3;
+    color: #0056b3;
 }
 
 .github-link:hover i {
-    color: #333;
+    color: #0056b3;
 }
 
 .wechat-link:hover {
@@ -357,13 +369,17 @@ img.lazy {
     color: #1da1f2;
 }
 
+.linkedin-link {
+    border-bottom: 2px solid #007bff;
+}
+
 .linkedin-link:hover {
-    border-bottom-color: #0077b5;
-    color: #0077b5;
+    border-bottom-color: #0056b3;
+    color: #0056b3;
 }
 
 .linkedin-link:hover i {
-    color: #0077b5;
+    color: #0056b3;
 }
 
 .orcid-link:hover {
